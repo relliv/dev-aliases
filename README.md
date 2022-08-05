@@ -1,4 +1,4 @@
-# dev-aliases-windows
+# dev-aliases
 My development environment commands' aliases for Windows
 
 ## Installation
