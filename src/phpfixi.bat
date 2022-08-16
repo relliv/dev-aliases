@@ -1,3 +1,3 @@
 @REM Install PHP CS Fixer
 
-composer require friendsofphp/php-cs-fixer
+composer require friendsofphp/php-cs-fixer --dev
