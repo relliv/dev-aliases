@@ -1,4 +1,4 @@
 @REM Remove node modules directly
 
-rd -r "./node_modules"
-rd "./package-lock.json"
+if exist "./node_modules" rd /s /q "./node_modules"
+if exist "./package-lock.json" rd /s /q "./package-lock.json"
