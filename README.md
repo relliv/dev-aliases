@@ -1,12 +1,13 @@
 # dev-aliases
-My development environment commands' aliases for Windows
 
-## Installation
+My command aliases required for a full-stack developer
+
+## Installation Windows
 
 ### Step 1: Pull the files
 
 - Go to the root folder of the `C:\` drive (or whatever your root folder is) then create `aliases` folder
-- Clone this repository to the `aliases` folder (hint: use `git clone https://github.com/EgoistDeveloper/dev-aliases-windows`)
+- Clone this repository to the `aliases` folder (hint: use `git clone https://github.com/relliv/dev-aliases`)
 
 ### Step 2: Define environment variables
 
@@ -23,6 +24,15 @@ My development environment commands' aliases for Windows
 
 See more info: [Source](https://stackoverflow.com/a/39459404/6940144)
 
-## Usage
+### Usage
 
 Long command is `php artisan serve`. Short command is `pas`. We are calling aliases by file name.
+
+
+## Installation Linux
+
+...
+
+## Installation MacOS
+
+...
