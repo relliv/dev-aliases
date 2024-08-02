@@ -30,6 +30,14 @@ declare -a aliases=(
     # Angular
     "alias ngs='ng serve --host 0.0.0.0 --port 4200 --disable-host-check --live-reload=false'"
     "alias ngss='ng serve --host 0.0.0.0 --port 4444 --disable-host-check --live-reload=false'"
+
+    # Laravel
+    "alias pas='php artisan serve --port=8000'"
+    "alias pass='php artisan serve --port=9000'"
+    "alias pam='php artisan migrate'"
+    "alias pamf='php artisan migrate:fresh'"
+    "alias pamfs='php artisan migrate:fresh --seed'"
+    "alias pamr='php artisan migrate:rollback'"
 )
 
 # .zshrc file path
