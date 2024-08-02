@@ -26,6 +26,10 @@ declare -a aliases=(
 
     # Composer
     "alias ci='composer install'"
+
+    # Angular
+    "alias ngs='ng serve --host 0.0.0.0 --port 4200 --disable-host-check --live-reload=false'"
+    "alias ngss='ng serve --host 0.0.0.0 --port 4444 --disable-host-check --live-reload=false'"
 )
 
 # .zshrc file path
