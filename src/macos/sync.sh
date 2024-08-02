@@ -6,6 +6,10 @@
 
 # Alias list
 declare -a aliases=(
+    # Docker
+    "alias docup='docker-compose up'"
+    "alias docupd='docker-compose up -d'"
+
     # Node
     "alias nap='node app.js'"
     "alias tap='ts-node app.ts'"
