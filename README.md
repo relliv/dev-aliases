@@ -35,4 +35,11 @@ Long command is `php artisan serve`. Short command is `pas`. We are calling alia
 
 ## Installation MacOS
 
-...
+> [!WARNING]  
+> This script created for automatic alias sync to your **zsh** profile. You need to backup your `/Users/{username}/.zshrc` file before run sync script.
+
+Run sync command
+
+```bash
+sh src/macos/sync.sh
+```
