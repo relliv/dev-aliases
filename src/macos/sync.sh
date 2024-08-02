@@ -6,17 +6,21 @@
 
 # Alias list
 declare -a aliases=(
-    # NPM aliases
+    # Node
+    "alias nap='node app.js'"
+    "alias tap='ts-node app.ts'"
+    
+    # NPM
     "alias ni='npm i'"
     "alias nil='npm i --legacy-peer-deps'"
     "alias nrn='if [ -d \"./node_modules\" ]; then rm -rf \"./node_modules\"; echo \"Removed ./node_modules directory\"; fi; if [ -f \"./package-lock.json\" ]; then rm \"./package-lock.json\"; echo \"Removed ./package-lock.json file\"; fi'"
 
-    # PNPM aliases
+    # PNPM
     "alias pi='pnpm i'"
     "alias piw='pnpm i --workspace-root'"
     "alias prn='if [ -d \"./node_modules\" ]; then rm -rf \"./node_modules\"; echo \"Removed ./node_modules directory\"; fi; if [ -f \"./pnpm-lock.yaml\" ]; then rm \"./pnpm-lock.yaml\"; echo \"Removed ./pnpm-lock.yaml file\"; fi'"
 
-    # Composer aliases
+    # Composer
     "alias ci='composer install'"
 )
 
