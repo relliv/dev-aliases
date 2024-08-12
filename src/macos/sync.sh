@@ -37,6 +37,7 @@ declare -a aliases=(
 
     # Composer
     "alias ci='composer install'"
+    "alias cu='composer update'"
 
     # Angular
     "alias ngs='ng serve --host 0.0.0.0 --port 4200 --disable-host-check --live-reload=false'"
