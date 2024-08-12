@@ -10,8 +10,8 @@ declare -a aliases=(
     "alias c='clear'"
 
     # Docker
-    "alias docup='docker-compose up'"
-    "alias docupd='docker-compose up -d'"
+    "alias docup='docker compose up'"
+    "alias docupd='docker compose up -d'"
 
     # Node
     "alias nap='node app.js'"
