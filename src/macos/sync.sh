@@ -41,6 +41,8 @@ declare -a aliases=(
     "alias pamf='php artisan migrate:fresh'"
     "alias pamfs='php artisan migrate:fresh --seed'"
     "alias pamr='php artisan migrate:rollback'"
+    "alias paop='php artisan optimize'"
+    "alias paopc='php artisan optimize:clear'"
 )
 
 # .zshrc file path
