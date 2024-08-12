@@ -22,10 +22,18 @@ declare -a aliases=(
     "alias nil='npm i --legacy-peer-deps'"
     "alias nrn='if [ -d \"./node_modules\" ]; then rm -rf \"./node_modules\"; echo \"Removed ./node_modules directory\"; fi; if [ -f \"./package-lock.json\" ]; then rm \"./package-lock.json\"; echo \"Removed ./package-lock.json file\"; fi'"
 
+    # NPM General Scripts
+    "alias nrd='npm run dev'"
+    "alias nrs='npm run start'"
+
     # PNPM
     "alias pi='pnpm i'"
     "alias piw='pnpm i --workspace-root'"
     "alias prn='if [ -d \"./node_modules\" ]; then rm -rf \"./node_modules\"; echo \"Removed ./node_modules directory\"; fi; if [ -f \"./pnpm-lock.yaml\" ]; then rm \"./pnpm-lock.yaml\"; echo \"Removed ./pnpm-lock.yaml file\"; fi'"
+
+    # PNPM General Scripts
+    "alias prd='pnpm dev'"
+    "alias prs='pnpm start'"
 
     # Composer
     "alias ci='composer install'"
