@@ -6,6 +6,9 @@
 
 # Alias list
 declare -a aliases=(
+    # Basic
+    "alias c='clear'"
+
     # Docker
     "alias docup='docker-compose up'"
     "alias docupd='docker-compose up -d'"
@@ -13,7 +16,7 @@ declare -a aliases=(
     # Node
     "alias nap='node app.js'"
     "alias tap='ts-node app.ts'"
-    
+
     # NPM
     "alias ni='npm i'"
     "alias nil='npm i --legacy-peer-deps'"
@@ -51,7 +54,7 @@ cp "$zshrc_file" "$backup_file"
 temp_file=$(mktemp)
 
 # Append existing content of the .zshrc file to the temporary file
-cat "$backup_file" > "$temp_file"
+cat "$backup_file" >"$temp_file"
 
 # Check if the region tags exist
 if grep -q "#region dev aliases" "$zshrc_file"; then
@@ -60,15 +63,14 @@ if grep -q "#region dev aliases" "$zshrc_file"; then
 fi
 
 # Add the region start and end tags and aliases to the temporary file
-echo "#region dev aliases" >> "$temp_file"
+echo "#region dev aliases" >>"$temp_file"
 
 # Add aliases to the temporary file
-for alias_cmd in "${aliases[@]}"
-do
-    echo "$alias_cmd" >> "$temp_file"
+for alias_cmd in "${aliases[@]}"; do
+    echo "$alias_cmd" >>"$temp_file"
 done
 
-echo "#endregion" >> "$temp_file"
+echo "#endregion" >>"$temp_file"
 
 # Replace the old .zshrc file with the new content
 mv "$temp_file" "$zshrc_file"
