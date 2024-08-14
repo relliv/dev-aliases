@@ -44,6 +44,7 @@ declare -a aliases=(
     "alias ngss='ng serve --host 0.0.0.0 --port 4444 --disable-host-check --live-reload=false'"
 
     # Laravel
+    "alias pak='php artisan key:generate'"
     "alias pas='php artisan serve --port=8000'"
     "alias pass='php artisan serve --port=9000'"
     "alias pam='php artisan migrate'"
