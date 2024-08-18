@@ -53,6 +53,7 @@ declare -a aliases=(
     "alias pamr='php artisan migrate:rollback'"
     "alias paop='php artisan optimize'"
     "alias paopc='php artisan optimize:clear'"
+    "alias pat='php artisan test'"
 )
 
 # .zshrc file path
